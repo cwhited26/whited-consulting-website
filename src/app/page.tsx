@@ -164,14 +164,6 @@ function Founder() {
         >
           LinkedIn
         </a>
-        <a
-          href="https://twitter.com/chasewhited"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-zinc-400 transition hover:text-zinc-200"
-        >
-          Twitter
-        </a>
       </div>
     </section>
   );
