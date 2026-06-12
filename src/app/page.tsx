@@ -41,6 +41,21 @@ const BRANDS: readonly Brand[] = [
     href: "https://athlete-os.com",
     display: "athlete-os.com",
   },
+  // TODO(chase): swap hrefs to https://layoutbook.co and https://thefieldbook.co once the domains are registered and pointed.
+  {
+    name: "Layoutbook",
+    oneLiner:
+      "The little black book of landing-page prompts that don't look vibe-coded. For designers, devs, and agencies building aspirational pages. $249 once, yours for life.",
+    href: "https://layoutbook.vercel.app",
+    display: "layoutbook.co",
+  },
+  {
+    name: "Field Book",
+    oneLiner:
+      "The little black book of conversion-first website prompts. For designers, freelancers, agencies, and owners building local-business sites. $149 once, yours for life.",
+    href: "https://fieldbook-alpha.vercel.app",
+    display: "thefieldbook.co",
+  },
   {
     name: "Tennessee Valley Exteriors",
     oneLiner:

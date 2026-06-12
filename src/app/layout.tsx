@@ -10,7 +10,7 @@ const inter = Inter({
 
 const TITLE = "Whited Consulting — Built by an operator. Used by operators.";
 const DESCRIPTION =
-  "Whited Consulting is the parent agency behind Pocket Agent, PA·dev, Buildout Studios, Buildout Measure, AthleteOS, and Tennessee Valley Exteriors — operator-led builds and working products, built and run from one brain.";
+  "Whited Consulting is the parent agency behind Pocket Agent, PA·dev, Buildout Studios, Buildout Measure, AthleteOS, Layoutbook, Field Book, and Tennessee Valley Exteriors — operator-led builds and working products, built and run from one brain.";
 
 export const metadata: Metadata = {
   title: TITLE,
