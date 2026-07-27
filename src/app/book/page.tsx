@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const EMAIL = "chase@whited.consulting";
-const EMBED_URL = "https://buildoutschedule.com/chase";
+const EMBED_URL = "https://buildoutschedule.com/chase/schedule/work-with-me";
 
 const TITLE = "Book a call — Whited Consulting";
 const DESCRIPTION =
