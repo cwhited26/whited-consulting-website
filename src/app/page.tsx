@@ -1,66 +1,77 @@
+import Link from "next/link";
+
 interface Brand {
   name: string;
   oneLiner: string;
   href: string;
   display: string;
+  kind: "product" | "studio" | "operating";
 }
 
 const BRANDS: readonly Brand[] = [
   {
     name: "Pocket Agent",
     oneLiner:
-      "One chat you tell what needs doing. It runs the work you're tired of running, plugs into the tools you already use, and waits for your approval before anything goes out.",
+      "An AI Agent Workspace for owner-led businesses. Your business knowledge, role-based personas, workflow tools, and owner-approved actions in one chat.",
     href: "https://aipocketagent.com",
     display: "aipocketagent.com",
-  },
-  {
-    name: "PA·dev",
-    oneLiner:
-      "Pocket Agent for developers. REST + MCP, bring your own model, hosted brain plus personas and privacy zones.",
-    href: "https://getpa-dev.vercel.app",
-    display: "getpa.dev",
+    kind: "product",
   },
   {
     name: "Buildout Studios",
     oneLiner:
-      "My software studio. Custom builds and white-label contractor-OS templates — Pocket Agent ships pre-installed in every BOS Custom build.",
+      "My software studio. Custom CRMs, field-ops apps, scheduling, documents, and automation for service businesses. Every custom build ships with Pocket Agent installed.",
     href: "https://buildoutstudios.com",
     display: "buildoutstudios.com",
+    kind: "studio",
+  },
+  {
+    name: "Buildout Schedule",
+    oneLiner:
+      "AI-native scheduling. Booking pages, calendar sync, availability logic, and reusable embeds — under the Buildout Studios brand and inside every Custom build.",
+    href: "https://buildoutschedule.com",
+    display: "buildoutschedule.com",
+    kind: "product",
   },
   {
     name: "Buildout Measure",
     oneLiner:
-      "Roof measurement SaaS. Aerial measurement, NOAA storm history, and supplier-ready PDFs in three taps. Pay per report or $79/mo Pro.",
+      "Roof measurement SaaS. Structured building data, NOAA storm history, and supplier-ready PDFs in three taps. Pay per report or $79/mo Pro.",
     href: "https://measure.buildoutstudios.com",
     display: "measure.buildoutstudios.com",
+    kind: "product",
   },
   {
     name: "AthleteOS",
     oneLiner:
-      "Sports SaaS for parents, coaches, and youth-team operators. Career timelines, schedules, scoreboards, fundraising.",
+      "The operating system for youth sports. Organization management, parent engagement, coach tools, scheduling, and AI-assisted workflows.",
     href: "https://athlete-os.com",
     display: "athlete-os.com",
+    kind: "product",
   },
   {
     name: "Layoutbook",
     oneLiner:
-      "The little black book of landing-page prompts that don't look vibe-coded. For designers, devs, and agencies building aspirational pages. $249 once, yours for life.",
+      "The designer's little black book of landing-page prompts that don't look vibe-coded. For designers, devs, and agencies building aspirational pages. $249 once.",
     href: "https://layoutpromptstore.com",
     display: "layoutpromptstore.com",
+    kind: "product",
   },
   {
     name: "Field Book",
     oneLiner:
-      "The little black book of conversion-first website prompts. For designers, freelancers, agencies, and owners building local-business sites. $149 once, yours for life.",
+      "The little black book of conversion-first website prompts. For freelancers, agencies, and owners building local-business sites. $149 once.",
     href: "https://fieldbooksites.com",
     display: "fieldbooksites.com",
+    kind: "product",
   },
   {
     name: "Tennessee Valley Exteriors",
     oneLiner:
-      "My roofing company in north Alabama. A working contracting business — and the proof I run the same brain I sell.",
+      "My roofing company in north Alabama. A working contracting business — and the ground where the rest of the stack gets proven before it gets sold.",
     href: "https://tnvex.com",
     display: "tnvex.com",
+    kind: "operating",
   },
 ];
 
@@ -93,15 +104,22 @@ function Hero() {
         Built by an operator. Used by operators.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-balance text-base leading-relaxed text-zinc-300 sm:text-lg">
-        A software studio, a roofing company, and the products I build and run from one brain.
+        Revenue systems, custom software, AI workflows, and focused SaaS
+        products for owner-led businesses.
       </p>
-      <div className="mt-9 flex justify-center">
+      <div className="mt-9 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
         <a
           href={`mailto:${EMAIL}`}
           className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
         >
           Email Chase
         </a>
+        <Link
+          href="/about"
+          className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white transition hover:border-accent/40 hover:bg-white/[0.06] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
+        >
+          About Chase
+        </Link>
       </div>
     </section>
   );
@@ -114,7 +132,11 @@ function WhatThisIs() {
         What this is
       </h2>
       <p className="mt-5 text-base leading-relaxed text-zinc-300 sm:text-lg">
-        Whited Consulting is the holding entity behind everything I build. Most of it is software you can buy or use today. One of them — Tennessee Valley Exteriors — is a roofing company I actually run, which is where the rest of it gets proven before I sell it. No fluff, no hype, just the operator-built infrastructure that runs them.
+        Whited Consulting is the holding entity behind the work. A software
+        studio, a set of focused SaaS products, and a roofing company I actually
+        run — where the rest of the stack gets proven before I sell it. Every
+        piece traces back to a real operating problem, a practical system, and
+        the customer or business outcome that came from it.
       </p>
     </section>
   );
@@ -132,10 +154,22 @@ function Brands() {
         ))}
       </div>
       <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-zinc-500">
-        Building next: Buildout Loyalty and Buildout Scout. Specs locked, not live yet.
+        In progress: PA·dev (developer edition of Pocket Agent), Buildout
+        Loyalty, and Buildout Scout. Specs locked; not shipped yet.
       </p>
     </section>
   );
+}
+
+function kindLabel(kind: Brand["kind"]): string {
+  switch (kind) {
+    case "product":
+      return "Live product";
+    case "studio":
+      return "Studio · templates + custom builds";
+    case "operating":
+      return "Operating business";
+  }
 }
 
 function BrandCard({ brand }: { brand: Brand }) {
@@ -146,7 +180,12 @@ function BrandCard({ brand }: { brand: Brand }) {
       rel="noopener noreferrer"
       className="group flex flex-col rounded-xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-accent/40 hover:bg-white/[0.04] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
     >
-      <h3 className="text-lg font-semibold text-white">{brand.name}</h3>
+      <div className="flex items-start justify-between gap-3">
+        <h3 className="text-lg font-semibold text-white">{brand.name}</h3>
+        <span className="mt-1 shrink-0 rounded-full border border-white/10 bg-white/[0.03] px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-zinc-400">
+          {kindLabel(brand.kind)}
+        </span>
+      </div>
       <p className="mt-2 text-sm leading-relaxed text-zinc-400">
         {brand.oneLiner}
       </p>
@@ -178,18 +217,19 @@ function Founder() {
         Founder
       </h2>
       <p className="mt-5 text-base leading-relaxed text-zinc-300 sm:text-lg">
-        I&apos;m Chase Whited. I run all of it. Solo. From a phone, mostly. The shape of my path so far lives at{" "}
-        <a
-          href="https://chase.whited.consulting"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent transition hover:text-cyan-300"
-        >
-          chase.whited.consulting
-        </a>
-        . Here&apos;s how to get in touch.
+        I&apos;m Chase Whited. Air Force investigator turned entrepreneur turned
+        K-12 SaaS seller turned systems and product builder. Seven years at
+        Snap! Mobile growing one territory from roughly $300K to a $2.5M
+        annualized pace. Now I build revenue systems, custom software, and AI
+        workflows for owner-led businesses — and run all of the above.
       </p>
       <div className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm">
+        <Link
+          href="/about"
+          className="text-accent transition hover:text-cyan-300"
+        >
+          About Chase
+        </Link>
         <a
           href={`mailto:${EMAIL}`}
           className="text-accent transition hover:text-cyan-300"
