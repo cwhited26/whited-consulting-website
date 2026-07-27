@@ -65,14 +65,6 @@ const BRANDS: readonly Brand[] = [
     display: "fieldbooksites.com",
     kind: "product",
   },
-  {
-    name: "Tennessee Valley Exteriors",
-    oneLiner:
-      "My roofing company in north Alabama. A working contracting business — and the ground where the rest of the stack gets proven before it gets sold.",
-    href: "https://tnvex.com",
-    display: "tnvex.com",
-    kind: "operating",
-  },
 ];
 
 const EMAIL = "chase@whited.consulting";

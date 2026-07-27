@@ -1,6 +1,6 @@
 # whited-consulting-website
 
-Parent-brand one-pager for Whited Consulting — the holding entity behind Pocket Agent, PA·dev, Buildout Studios, Buildout Measure, AthleteOS, and Tennessee Valley Exteriors.
+Parent-brand one-pager for Whited Consulting — the holding entity behind Pocket Agent, PA·dev, Buildout Studios, Buildout Measure, and AthleteOS.
 
 Live: <https://whited.consulting>
 

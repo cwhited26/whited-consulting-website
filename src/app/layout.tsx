@@ -10,7 +10,7 @@ const inter = Inter({
 
 const TITLE = "Whited Consulting — Built by an operator. Used by operators.";
 const DESCRIPTION =
-  "Whited Consulting builds revenue systems, custom software, AI workflows, and focused SaaS products for owner-led businesses. Home of Pocket Agent, Buildout Studios, Buildout Schedule, Buildout Measure, AthleteOS, Layoutbook, Field Book, and Tennessee Valley Exteriors.";
+  "Whited Consulting builds revenue systems, custom software, AI workflows, and focused SaaS products for owner-led businesses. Home of Pocket Agent, Buildout Studios, Buildout Schedule, Buildout Measure, AthleteOS, Layoutbook, and Field Book.";
 
 export const metadata: Metadata = {
   title: TITLE,
