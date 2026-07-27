@@ -458,9 +458,15 @@ function Contact() {
         Consulting, or strategic AE fits — email is the fastest way.
       </p>
       <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+        <Link
+          href="/book"
+          className="inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
+        >
+          Book a call with Chase
+        </Link>
         <a
           href={`mailto:${EMAIL}`}
-          className="inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
+          className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/[0.03] px-5 py-2.5 text-sm font-semibold text-white transition hover:border-accent/40 hover:bg-white/[0.06] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
         >
           {EMAIL}
         </a>
