@@ -192,12 +192,20 @@ function TopBar() {
         </svg>
         Whited Consulting
       </Link>
-      <a
-        href={`mailto:${EMAIL}`}
-        className="text-accent transition hover:text-cyan-300"
-      >
-        {EMAIL}
-      </a>
+      <div className="flex items-center gap-5">
+        <Link
+          href="/why-chase"
+          className="hidden text-zinc-400 transition hover:text-white sm:inline"
+        >
+          Why Chase
+        </Link>
+        <a
+          href={`mailto:${EMAIL}`}
+          className="text-accent transition hover:text-cyan-300"
+        >
+          {EMAIL}
+        </a>
+      </div>
     </div>
   );
 }
@@ -470,6 +478,12 @@ function Contact() {
         >
           {EMAIL}
         </a>
+        <Link
+          href="/why-chase"
+          className="text-zinc-400 transition hover:text-zinc-200"
+        >
+          Why Chase
+        </Link>
         <a
           href="https://www.linkedin.com/in/chasewhited"
           target="_blank"

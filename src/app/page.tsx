@@ -113,6 +113,12 @@ function Hero() {
           Email Chase
         </a>
         <Link
+          href="/why-chase"
+          className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white transition hover:border-accent/40 hover:bg-white/[0.06] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
+        >
+          Why Chase
+        </Link>
+        <Link
           href="/about"
           className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white transition hover:border-accent/40 hover:bg-white/[0.06] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#05070a]"
         >
@@ -227,6 +233,12 @@ function Founder() {
           className="text-accent transition hover:text-cyan-300"
         >
           Book a call
+        </Link>
+        <Link
+          href="/why-chase"
+          className="text-accent transition hover:text-cyan-300"
+        >
+          Why Chase
         </Link>
         <Link
           href="/about"
